@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:paddingBottom="80dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        tools:context=".ProfileFragment">
+
+        <!-- Garis Horizontal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:drawableStart="@drawable/back"
+                android:gravity="center"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="105dp"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:background="@drawable/shape"
+                android:drawableStart="@drawable/more1"
+                android:gravity="center"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp" />
+        </LinearLayout>
+
+        <!-- Profil Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/profil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"
+                android:contentDescription="@null"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Azki Nabila Albab"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@id/profil"
+                android:layout_centerHorizontal="true"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" @azkinabila "
+                android:textStyle="bold"
+                android:textColor="@color/abu"
+                android:textSize="12sp"
+                android:layout_below="@id/nama"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp" />
+        </RelativeLayout>
+
+        <!-- FrameLayout Section -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            android:padding="16dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AZKI NABILA ALBAB"
+                    android:drawablePadding="160dp"
+                    android:textColor="@color/white"
+                    android:drawableEnd="@drawable/copy2"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BNI Taplus Muda | 7263-2938-2390-****"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:drawableEnd="@drawable/down"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp ********"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    android:drawableEnd="@drawable/eye"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="24dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Button Section -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="QR Code"
+            android:textSize="18sp"
+            android:background="@drawable/shape"
+            android:drawableStart="@drawable/code"
+            android:drawableEnd="@drawable/dropdown"
+            android:drawablePadding="8dp"
+            android:textColor="@color/abu"
+            android:textAllCaps="false"
+            android:layout_marginTop="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textSize="18sp"
+            android:background="@drawable/shape"
+            android:drawableStart="@drawable/email"
+            android:drawableEnd="@drawable/dropdown"
+            android:drawablePadding="8dp"
+            android:textColor="@color/abu"
+            android:textAllCaps="false" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:textSize="18sp"
+            android:background="@drawable/shape"
+            android:drawableStart="@drawable/lock"
+            android:drawableEnd="@drawable/dropdown"
+            android:drawablePadding="8dp"
+            android:textColor="@color/abu"
+            android:textAllCaps="false"
+            android:layout_marginBottom="50dp"/>
+
+    </LinearLayout>
+</ScrollView>

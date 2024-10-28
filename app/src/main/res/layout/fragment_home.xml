@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        tools:context=".HomeFragment">
+
+        <!-- TextView Pertama -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/abu"
+            android:text="@string/welcome_message" />
+
+        <!-- ImageView untuk Logo -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bni"
+            android:contentDescription="@null" />
+
+        <!-- TextView Saldo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/saldo"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <!-- Garis Horizontal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="#E16417" />
+
+            <View
+                android:layout_width="340dp"
+                android:layout_height="2dp"
+                android:background="#000000" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:padding="16dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AZKI NABILA ALBAB"
+                    android:drawablePadding="180dp"
+                    android:gravity="center_vertical"
+                    android:drawableEnd="@drawable/copy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BNI Taplus Muda | 7263-2938-2390-****"
+                    android:textSize="10sp"
+                    android:drawableEnd="@drawable/dropdown"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Rp ********"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableEnd="@drawable/eyeclose"
+                    android:drawablePadding="30dp"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:text="Tarik Tunai"
+                        android:textStyle="bold"
+                        android:background="@drawable/shape2"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="50dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="Setor Tunai"
+                        android:background="@drawable/shape2"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- TextView Shortcut -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Shortcut Kamu"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <!-- Tombol Shortcut -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:textSize="12sp"
+                android:text="Transfer Uang"
+                android:background="@drawable/shape"
+                android:drawableLeft="@drawable/transfer"
+                android:drawablePadding="8dp"
+                android:textAllCaps="false"
+                android:layout_marginRight="16dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:textSize="12sp"
+                android:text="Virtual Account"
+                android:background="@drawable/shape"
+                android:drawableLeft="@drawable/transfer"
+                android:drawablePadding="8dp"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:textSize="12sp"
+                android:text="Pulsa / Data"
+                android:background="@drawable/shape"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="8dp"
+                android:textAllCaps="false"
+                android:layout_marginRight="16dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:textSize="12sp"
+                android:text="Menu Lengkap"
+                android:background="@drawable/shape"
+                android:drawableLeft="@drawable/menu"
+                android:drawablePadding="8dp"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="40dp"
+            android:text="Insight BNI"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gbr1"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/gbr2"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/gbr3"
+                    android:contentDescription="@null"
+                    android:layout_marginBottom="50dp"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+</ScrollView>

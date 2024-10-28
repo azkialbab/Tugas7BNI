@@ -1,0 +1,11 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="menu">@style/CustomBottomNavigationView</item>
+    </style>
+
+    <style name="CustomBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemTextColor">@color/white</item> <!-- Mengubah warna teks item menjadi putih -->
+        <item name="itemIconTint">@color/white</item> <!-- Mengubah warna ikon menjadi putih -->
+    </style>
+</resources>
